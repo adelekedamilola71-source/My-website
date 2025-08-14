@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Watch Ads & Earn - Demo</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      text-align: center;
+
+      background-color: #f8f8f8;
+
+      padding: 20px;
+
+    }
+
+    h1 {
+
+      color: #333;
+
+    }
+
+    .video-container {
+
+      margin-top: 20px;
+
+    }
+
+    button {
+
+      padding: 10px 20px;
+
+      background-color: #28a745;
+
+      color: white;
+
+      border: none;
+
+      cursor: pointer;
+
+      font-size: 16px;
+
+      border-radius: 5px;
+
+    }
+
+    button:hover {
+
+      background-color: #218838;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Welcome to AdView Rewards 🎥💰</h1>
+
+  <p>Watch videos to earn points! This is a demo version.</p>
+
+  
+
+  <div class="video-container">
+
+    <video width="320" height="240" controls>
+
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+      Your browser does not support the video tag.
+
+    </video>
+
+  </div>
+
+  
+
+  <p>Points: <span id="points">0</span></p>
+
+  <button onclick="addPoints()">I watched the ad!</button>
+
+
+
+  <script>
+
+    let points = 0;
+
+    function addPoints() {
+
+      points += 10;
+
+      document.getElementById('points').innerText = points;
+
+      alert("You earned 10 points!");
+
+    }
+
+  </script>
+
+</body>
+
+</html>
